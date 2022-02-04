@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 //require('dotenv').config()
 // import 'dotenv/config'
 import "./contact.css"
+import { ThemeContext } from '../../context';
+
 
 const Contact = () => {
     const formRef = useRef()
     const [done, setDone] = useState(false);
+    const theme = useContext(ThemeContext)
+    const darkMode = theme.state.darkMode;
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -49,10 +53,10 @@ const Contact = () => {
                 freelancing if the right project comes along. me.
               </p>
               <form ref={formRef} onSubmit={handleSubmit}>
-                  <input type="text" placeholder='Name' name="user_name" />
-                  <input type="text" placeholder='Subject' name="user_subject" />
-                  <input type="email" placeholder='Email' name="user_email" />
-                  <textarea rows="5" placeholder='Message' name="message"/>
+                  <input style={{backgroundColor:darkMode && "#333" ,color:darkMode && "#fff"}} type="text" placeholder='Name' name="user_name" />
+                  <input style={{backgroundColor:darkMode &&  "#333",color:darkMode &&"#fff"}} type="text" placeholder='Subject' name="user_subject" />
+                  <input style={{backgroundColor:darkMode && "#333",color:darkMode &&  "#fff"}} type="email" placeholder='Email' name="user_email" />
+                  <textarea rows="5" placeholder='Message' name="message" style={{backgroundColor:darkMode && "#333",color:darkMode && "#fff"}}/>
                   <button type='submit'>Submit</button>
                   {done && "Thank You..."}
               </form>
