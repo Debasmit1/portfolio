@@ -18,18 +18,14 @@ const About = () => {
           readable content.
         </p>
         <p className="a-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
+          I love to travel a lot.I love to capture these moments with me by taking a photograph or making a video . Sometimes I even post them in youtube. But not a professional vlogger!!!
         </p>
         <div className="a-award">
           <img src="https://images.chesscomfiles.com/uploads/v1/article/24916.42c534a5.668x375o.7f852b4f91cc@2x.jpeg" alt="" className="a-award-img" />
           <div className="a-award-texts">
-            <h4 className="a-award-title">International Design Awards 2021</h4>
+            <h4 className="a-award-title">District Champion</h4>
             <p className="a-award-desc">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit
-              and fugit.
+              Won a few title during my school days and during my college days. But try to play even today. Because that's my hobby.
             </p>
           </div>
         </div>
